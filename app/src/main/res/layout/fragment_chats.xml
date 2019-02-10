@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatsFragment">
+
+
+
+    <TextView
+        android:id="@+id/no_chats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="'Currently there are no active Chats'"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:textColor="@color/textColorFragDef"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/conv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editText">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search here...."
+        android:textColorHint="@color/textColorblack"
+        android:theme="@style/MyEditTextStyle2"
+        android:drawableRight="@drawable/ic_search_black_24dp"/>
+</RelativeLayout>

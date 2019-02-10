@@ -1,0 +1,48 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".InterestActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:src="@drawable/ic_interests_text"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/nacho_text_view_with_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:hint="@string/hint_text_view_with_icons"
+            android:textColor="@color/textColorPrimary"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/list_chip_values"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="10dp"
+            android:background="@drawable/gradientbuttonbackground"
+            android:textSize="20dp"
+            android:text="@string/btn_list_chip_values"
+            android:textColor="@color/textColorPrimary"/>
+
+    </LinearLayout>
+
+</ScrollView>

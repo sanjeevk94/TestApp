@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prof_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/default_contact"/>
+
+    <TextView
+        android:id="@+id/prof_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/prof_img"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/prof_img"
+        android:text="Display Name"
+        android:textColor="@color/textColorblack"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/prof_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/prof_name"
+        android:layout_below="@+id/prof_name"
+        android:layout_marginTop="10dp"
+        android:text="Default user status"
+        android:maxLines="2"
+        android:maxLength="100"
+        android:ellipsize="end"/>
+
+
+    <ImageView
+        android:id="@+id/prof_online_icon"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/prof_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/prof_name"
+        android:visibility="invisible"
+       android:src="@drawable/ic_online_available_24dp"/>
+
+</RelativeLayout>

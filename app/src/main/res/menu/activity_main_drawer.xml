@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/messenger_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_requests"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Requests"
+            app:actionLayout="@layout/menu_counter"/>
+        <item
+            android:id="@+id/nav_chats"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chats" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Friends" />
+    </group>
+    <group
+        android:visible="false"
+        android:id="@+id/gift_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Events" />
+       <!-- <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_local_offer_black_24dp"
+            android:title="Offers" />-->
+        <item
+            android:id="@+id/nav_gifts"
+            android:icon="@drawable/ic_card_giftcard_black_24dp"
+            android:title="Gifts" />
+
+    </group>
+    <group
+        android:id="@+id/app_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+    </group>
+    <group
+        android:id="@+id/theme_settings"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_switch"
+            app:actionLayout="@layout/action_view_switch"
+            android:title="Night Mode" />
+    </group>
+</menu>

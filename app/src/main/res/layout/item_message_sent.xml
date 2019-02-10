@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:paddingTop="8dp">
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:id="@+id/text_message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/background_for_sender_msg"
+        android:maxWidth="240dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="hello, hello!"
+        android:textColor="@color/textColorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        emojicon:emojiconSize="28sp"/>
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:text="11:40"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:textSize="10sp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_message_body"
+        app:layout_constraintRight_toLeftOf="@+id/text_message_body" />
+
+    <ImageView
+        android:id="@+id/sen_message_image_layout"
+        android:text="hello, hello!"
+        android:background="@drawable/background_for_sender_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="2dp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

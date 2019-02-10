@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/change_chat_bg"
+        android:title="Set Wallpaper" />
+    <item
+        android:id="@+id/speak"
+        android:title="Speak Out">
+    </item>
+
+</menu>

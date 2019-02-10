@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/offers_appBar"/>
+
+    <TextView
+        android:id="@+id/no_offers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="'Currently there are no offers'"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:textColor="@color/textColorFragDef"/>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView_offers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/offers_appBar"
+        android:layoutAnimation="@anim/layout_animation_fall_down"/>
+</RelativeLayout>

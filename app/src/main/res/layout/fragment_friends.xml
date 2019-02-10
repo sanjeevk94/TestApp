@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FriendsFragment">
+
+    <TextView
+        android:id="@+id/no_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="'Currently there are no Friends'"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:textColor="@color/textColorFragDef"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/search"/>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search here...."
+        android:textColorHint="@color/textColorblack"
+        android:theme="@style/MyEditTextStyle2"
+        android:drawableRight="@drawable/ic_search_black_24dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/ic_fab_group_add_white_24dp"
+        app:backgroundTint="@color/colorPrimaryDark" />
+
+</RelativeLayout>

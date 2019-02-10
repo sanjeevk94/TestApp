@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/copy"
+        android:title="copy"
+        android:icon="@drawable/ic_content_copy_24dp">
+    </item>
+   <!-- <item
+        android:id="@+id/paste"
+        android:title="paste"
+        android:icon="@drawable/ic_content_paste_24dp">
+    </item>-->
+    <item
+        android:id="@+id/frwd"
+        android:title="forward"
+        android:icon="@drawable/ic_forward_24dp">
+    </item>
+    <item
+        android:id="@+id/delete"
+        android:title="delete"
+        android:icon="@drawable/ic_delete_white_24dp">
+    </item>
+    <item
+        android:id="@+id/listen"
+        android:title="Listen"
+        android:icon="@drawable/ic_volume_up_24dp">
+    </item>
+</menu>

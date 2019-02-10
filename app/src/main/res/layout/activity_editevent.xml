@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEventActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/editevents_appBar"/>
+
+    <TextView
+        android:id="@+id/emptyeventsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="'Currently there are no events'"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:textColor="@color/textColorFragDef"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/event_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/editevents_appBar"/>
+
+</RelativeLayout>

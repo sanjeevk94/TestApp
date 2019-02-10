@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000009</color>
+    <color name="colorAccent">#000000</color>
+    <color name="daynight_textColor">#ffffff</color>
+    <color name="switchColor">#000000</color>
+    <color name ="textColorPrimary">#ffffff</color>
+    <color name ="textColorblack">#ffffff</color>
+    <color name ="textColorFragDef">#ffffff</color>
+    <color name ="textColorProfileSechalf">#7295A6</color>
+</resources>
+

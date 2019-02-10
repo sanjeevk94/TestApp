@@ -1,0 +1,69 @@
+<resources>
+
+<style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColorHint">@color/textColorPrimary</item>
+    <item name="android:textColorPrimary">@color/textColorblack</item>
+    <item name="android:actionMenuTextColor">@color/textColorPrimary</item>
+    <item name="colorControlActivated">@color/textColorPrimary</item>
+    <item name="colorControlHighlight">@color/textColorPrimary</item>
+    <item name="colorControlNormal">@color/textColorPrimary</item>
+    <item name="android:itemBackground">@color/textColorPrimary</item>
+    <item name="android:textColor">@color/textColorblack</item>
+    <item name="windowActionModeOverlay">true</item>
+    <item name="actionModeBackground">@color/colorPrimaryDark</item>
+
+</style>
+<style name="SwitchCompatTheme" >
+    <item name="colorControlActivated">@color/colorPrimaryDark</item>
+</style>
+
+    <style name="AppTheme.AppBarOverlay">
+        <item name="android:titleTextStyle">@color/textColorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay">
+        <item name="android:titleTextStyle">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:textColor">@color/textColorblack</item>
+        <item name="android:background">@color/textColorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyEditTextStyle2" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/textColorblack</item>
+        <item name="colorControlNormal">@color/textColorblack</item>
+    </style>
+
+    <style name="MyAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="colorControlActivated">@color/textColorblack</item>
+        <item name="colorControlNormal">@color/textColorblack</item>
+    </style>
+
+    <style name="MyActionMode" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:actionModeBackground">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyCheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@drawable/my_compound_button_color_selector</item>
+        <item name="buttonTint">@drawable/my_compound_button_color_selector</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/textColorblack</item>
+    </style>
+
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation">@anim/bounce</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+
+</resources>
+

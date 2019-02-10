@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorPrimary"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/user_profile_img"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_height="300dp"
+        android:layout_weight="0.50"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_img"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Display Name"
+        android:textColor="@color/textColorblack"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:fontFamily="cursive"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/user_profile_status"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="User default status"
+        android:textColor="@color/textColorblack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:fontFamily="cursive"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:ellipsize="end"/>
+    <View
+        android:id="@+id/vVerticalLine"
+        android:background="@drawable/horizantalline"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/user_profile_status"
+        android:layout_height="1dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/user_send_req_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vVerticalLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradientbuttonbackground"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="FOLLOW"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/user_dec_req_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_send_req_btn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradientbuttonbackground"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="UNFOLLOW"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp" />
+
+
+    <!-- <Button
+         android:id="@+id/user_send_req_btn"
+         android:layout_width="194dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="119dp"
+         android:backgroundTint="@color/colorAccent"
+         android:paddingRight="10dp"
+         android:paddingStart="10dp"
+         android:text="SEND FRIEND REQUEST"
+         android:textColor="@color/textColorPrimary" />
+
+     <Button
+         android:id="@+id/user_dec_req_btn"
+         android:layout_width="194dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="59dp"
+         android:backgroundTint="@color/colorAccent"
+         android:paddingRight="10dp"
+         android:paddingStart="10dp"
+         android:text="DECLINE FRIEND REQUEST"
+         android:textColor="@color/textColorPrimary" />-->
+
+
+</RelativeLayout>
